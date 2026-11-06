@@ -18,7 +18,7 @@ jobs:
           mkdir -p www
           if [ ! -f www/index.html ]; then cp "$(ls *.html | head -1)" www/index.html; fi
           echo '{"name":"stg-nemlit-reader","version":"1.0.0","private":true}' > package.json
-          echo '{"appId":"tz.stgnemlit.reader","appName":"STG-NEMLIT 2026","webDir":"www"}' > capacitor.config.json
+          echo '{"appId":"tz.stgnemlit.reader","appName":"CHARBA STG-2026","webDir":"www"}' > capacitor.config.json
           npm install @capacitor/core@7 @capacitor/cli@7 @capacitor/android@7
       - run: npx cap add android
       - run: npx cap sync android
